@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Question no. 1
+        let name = prompt('enter your name')
+        console.log(name.length)
+
+// question no. 2
+        let data = prompt('enter your qualification')
+        let index = prompt('enter the index')
+        console.log(data.charAt(index)) 
+        
+// question no. 3
+        let string = prompt('enter your favourite color')
+        let firstIndex = prompt('enter first index')
+        let secondIndex = prompt('enter second index')
+        let result = string.substring(firstIndex, secondIndex)
+        console.log(result)
+
+// Question no. 4
+        let sentence = prompt('What is your aim?')
+        let word = sentence.split(' ')
+        let wordCount = word.length
+        console.log(wordCount)
+
+// Question no. 5
+        let sentenceToReplace = prompt('enter a sentence')
+        let searchedWord = prompt('enter the word to be replaced')
+        let replacedWord = prompt('enter the word to replace it with')
+        console.log(sentenceToReplace.replace(searchedWord,replacedWord))
+
+// Question no. 6
+        let str = prompt('enter any word')
+        let character = prompt('enter any character of this word')
+        console.log(str.indexOf(character))
+
+// Question no . 7
+        let string1 = 'classroom'
+        let string2 = string1.split('').reverse().join('')
+        console.log(string2)
+
+// Question no. 8
+        let givenString = 'dad'
+        let reversedString = givenString.split('').reverse().join('')
+        function isPalindrome(givenString){
+            if(givenString === reversedString){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        console.log(isPalindrome(givenString))
+
+    </script>
+</body>
+</html>
